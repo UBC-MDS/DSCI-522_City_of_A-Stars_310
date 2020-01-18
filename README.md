@@ -1,7 +1,7 @@
 # To Love or Not to Love: Project Proposal
 
 
-## 1. Datatset
+## Datatset
 We will be conducting analysis from the `Student Performance Dataset` from the UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/student+performance)
 
 This data set details student performance indicators (grades) of secondary school students for two courses in the form of two data sets, one for Maths and one for Portugese, along with 30 features spanning information pertaining to school activities, social behaviour and family background. The data set has been compiled using school reports and questionnaires answered by secondary school students in Portugal.
@@ -12,7 +12,7 @@ References:
 - P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7. [[Web Link](http://www3.dsi.uminho.pt/pcortez/student.pdf)]
 - Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science
 
-## 2. Research Questions
+## Research Questions
 
 The analysis will focus on answering the following inferential research questions:
 
@@ -21,14 +21,14 @@ The analysis will focus on answering the following inferential research question
 
 As a conclusion for the analysis, it might be interesting to explore whether there is a significance difference between the p-values derived from both the inferential analysis.
 
-## 3. Analysis Plan
+## Analysis Plan
 
 Our analysis of the data to answer both of the above stated research questions would include the following steps:
 
 - Estimating average grade received by a student when they are in a relationship and when they are not in one. This will be reported along with the 95% confidence intervals for the average grade.
 - Conducting a two-tailed hypothesis test and reporting the p-value.
 
-## 4. Exploratory Data Analysis
+## Exploratory Data Analysis
 
 - Data analysis figure: 
 Histograms for grades of students based on whether they are in a relationship or not for both the subjects. 
@@ -36,7 +36,7 @@ This will help us explore the distribution and plausible overlap in grades of st
 - Data analysis table: 
 A table reporting the average grades of students who are in a relationship and who are not, for both the subjects
 
-## 5. Reporting of Analysis
+## Reporting of Analysis
 
 The results of the analysis for both research questions will be shared as a combination of the following figures/tables:
 
