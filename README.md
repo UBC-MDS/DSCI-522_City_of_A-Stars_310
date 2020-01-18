@@ -1,4 +1,4 @@
-# To love or not to love: Project Proposal
+# To Love or Not to Love: Project Proposal
 
 
 ## 1. Datatset
