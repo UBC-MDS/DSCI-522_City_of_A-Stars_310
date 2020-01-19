@@ -1,4 +1,4 @@
-# author: Anas Muhammad
+# author: A. Muhammad
 # date: 2020-01-18
 
 '''This script performs EDA on the students performance datasets
