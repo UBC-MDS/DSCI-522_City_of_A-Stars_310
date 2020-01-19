@@ -19,8 +19,6 @@ The analysis will focus on answering the following inferential research question
 - Do secondary school students who are in a relationship have different grades for Maths than students who are not?
 - Do secondary school students who are in a relationship have different grades for Portugese than students who are not?
 
-As a conclusion for the analysis, it might be interesting to explore whether there is a significance difference between the p-values derived from both the inferential analysis.
-
 ## Analysis Plan
 
 Our analysis of the data to answer both of the above stated research questions would include the following steps:
@@ -30,11 +28,9 @@ Our analysis of the data to answer both of the above stated research questions w
 
 ## Exploratory Data Analysis
 
-- Data analysis figure: 
-Histograms for grades of students based on whether they are in a relationship or not for both the subjects. 
-This will help us explore the distribution and plausible overlap in grades of students who are in a relationship and who are not for both the subjects.
-- Data analysis table: 
-A table reporting the average grades of students who are in a relationship and who are not, for both the subjects
+The following data analysis figures/tables will be part of the EDA: 
+- Plots with error bars for standard deviation overlayed with the average grades for students who are in a relationship and who are not for both the subjects.    
+- Statitics for students of both subjects based on whether they are in a relationship or not.
 
 ## Reporting of Analysis
 
