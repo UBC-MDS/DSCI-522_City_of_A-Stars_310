@@ -28,9 +28,11 @@ Our analysis of the data to answer both of the above stated research questions w
 
 ## Exploratory Data Analysis
 
-The following data analysis figures/tables will be part of the EDA: 
+The following data analysis figures/tables will be part of the EDA:
 - Plots with error bars for standard deviation overlayed with the average grades for students who are in a relationship and who are not for both the subjects.    
 - Descriptive statistics (counts and averages) for students of both subjects based on whether they are in a relationship or not.
+
+EDA for the data set can be found [here](https://github.com/UBC-MDS/DSCI-522_City_of_A-Stars_310/blob/master/eda/eda_students.ipynb)
 
 ## Reporting of Analysis
 
