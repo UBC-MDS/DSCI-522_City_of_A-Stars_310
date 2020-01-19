@@ -30,7 +30,7 @@ Our analysis of the data to answer both of the above stated research questions w
 
 The following data analysis figures/tables will be part of the EDA: 
 - Plots with error bars for standard deviation overlayed with the average grades for students who are in a relationship and who are not for both the subjects.    
-- Statitics for students of both subjects based on whether they are in a relationship or not.
+- Descriptive statistics (counts and averages) for students of both subjects based on whether they are in a relationship or not.
 
 ## Reporting of Analysis
 
