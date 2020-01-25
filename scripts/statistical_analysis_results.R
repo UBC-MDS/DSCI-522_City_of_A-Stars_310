@@ -12,21 +12,33 @@ Options:
 " -> doc
 
 
-library(feather)
 library(tidyverse)
-library(caret)
 library(infer)
 library(ggthemes)
 library(docopt)
 library(gridExtra)
 library(cowplot)
+library(tools)
+library(testthat)
+
+
 
 #set.seed(2019)
 
 opt <- docopt(doc)
 
+
+
+
+
 main <- function(test, out_dir) {
   
+
+  test_that("test input must include a .csv file location",{
+    expect_equal(file_ext(test), "csv")})
+
+  test_that("output directory must not include an extension",{
+    expect_equal(file_ext(out_dir), "")})  
   # Load data ----------------------------------------------
   grades_df <- read_csv(test)
 
