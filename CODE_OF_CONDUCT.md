@@ -15,6 +15,7 @@ include:
 * Gracefully accepting constructive criticism
 * Focusing on what is best for the community
 * Showing empathy towards other community members
+* Being inclusive to all races, genders and ethnicities.
 
 ## Unacceptable Behavior
 Examples of unacceptable behavior by participants include:
@@ -35,7 +36,7 @@ When a group member notices behavior that goes against our code of conduct, they
 
 ## Incident Reporting Guidelines
 **Contact points**
-If a team member violates this Code of Conduct, we ask that you report it to the remaining team members. Our team includes Annas Muhhammad (anas.m.017@gmail.com), Sukriti Trehan (sukriti1394@gmail.com) , and Manuel Maldonado Aguilar (manu2856@gmail.com).
+If a team member violates this Code of Conduct, we ask that you report it to the remaining team members. Our team includes Anas Muhhammad (anas.m.017@gmail.com), Sukriti Trehan (sukriti1394@gmail.com) , and Manuel Maldonado Aguilar (manu2856@gmail.com).
 <br/> <br/>
 
 ## Attribution
