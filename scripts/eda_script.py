@@ -5,7 +5,7 @@
 for portuguese and math students and outputs necessary tables and
 figures to path provided.
 
-Usage: quick_csv_stat.py --file_path=<file_path> --results_path=<results_path>
+Usage: eda_script.py --file_path=<file_path> --results_path=<results_path>
 
 Options:
 --file_path=<file_path>  Path (excluding filenames) to the csv file.

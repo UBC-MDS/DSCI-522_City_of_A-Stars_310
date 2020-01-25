@@ -4,7 +4,7 @@
 '''This script cleans the raw math and portuguese
 students performance data.
 
-Usage: quick_csv_stat.py --file_path=<file_path> --clean_path=<clean_path>
+Usage: data_cleaning.py --file_path=<file_path> --clean_path=<clean_path>
 
 Options:
 --file_path=<file_path>  Path (excluding filenames) to the csv file.
