@@ -15,9 +15,25 @@ import pandas as pd
 import numpy as np
 from docopt import docopt
 import altair as alt
+import re
+import os
 
 
 opt = docopt(__doc__)
+
+def test_function():
+    file_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--file_path"]) 
+    out_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--clean_path"])
+    assert file_path_check == None, "you can not have extensions in path, only directories."
+    assert out_path_check == None, "you can not have extensions in path, only directories."
+    try:
+        os.listdir(opt["--file_path"])
+        os.listdir(opt["--clean_path"])
+    except Exception as e:
+        print(e)
+
+# test function runs here
+test_function()
 
 def main(file_path, clean_path):
     # read in data
@@ -39,6 +55,12 @@ def main(file_path, clean_path):
     # write to csv
     df_mat.to_csv(clean_path + "student-mat_clean.csv", index=False)
     df_por.to_csv(clean_path + "student-por_clean.csv", index=False)
+
+    # combine data
+    df_mat["Course"] = "Math"
+    df_por["Course"] = "Portuguese"
+    df_combined = df_mat.append(df_por, ignore_index=True)
+    df_combined.to_csv(clean_path + "student-combined_clean.csv", index= False)
 
 def sex_decoding(sex):
     if sex == "M":

@@ -16,6 +16,25 @@ import pandas as pd
 import numpy as np
 from docopt import docopt
 import altair as alt
+import re
+import os
+
+
+opt = docopt(__doc__)
+
+def test_function():
+    file_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--file_path"]) 
+    out_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--results_path"])
+    assert file_path_check == None, "you can not have extensions in path, only directories."
+    assert out_path_check == None, "you can not have extensions in path, only directories."
+    try:
+        os.listdir(opt["--file_path"])
+        os.listdir(opt["--results_path"])
+    except Exception as e:
+        print(e)
+
+# test function runs here
+test_function()
 
 
 opt = docopt(__doc__)
@@ -34,11 +53,11 @@ def main(file_path, results_path):
     ## tables
     # agg table math
     df_math_agg = df_mat[["romantic", "total_grade"]].groupby("romantic").agg(['count', 'mean', 'var'])
-    df_math_agg.to_csv(results_path + "math_table.csv", index=False)
+    df_math_agg.to_csv(results_path + "math_table.csv")
 
     # agg table por
     df_por_agg = df_por[["romantic", "total_grade"]].groupby("romantic").agg(['count', 'mean', 'var'])
-    df_por_agg.to_csv(results_path + "por_table.csv", index=False)
+    df_por_agg.to_csv(results_path + "por_table.csv")
 
 
 
