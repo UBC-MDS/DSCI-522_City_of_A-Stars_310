@@ -29,18 +29,23 @@ The final report can be found [here](https://github.com/UBC-MDS/DSCI-522_City_of
 To replicate this analysis, clone this GitHub repository, and run the following commands at the comman line/terminal from the root directory of this project:
 
   - download data
+  
   python scripts/data_download.py –url=https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip --destination=data/
   
   - clean the data
+  
   python scripts/data_cleaning.py --file_path=data/ --clean_path=data/
   
   - run the eda script
+  
   python scripts/eda_script.py --file_path=data/ --results_path=results/
   
   - run the statistical analysis script
+  
   Rscript scripts/statistical_analysis_results.r –test=data/student-combined_clean.csv --out_dir=results/figures
   
   - render the final report
+  
   Rscript -e "rmarkdown::render('doc/final_report.Rmd')"
   
   
