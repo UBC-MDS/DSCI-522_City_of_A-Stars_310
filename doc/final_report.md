@@ -41,24 +41,43 @@ extreme outliers or extreme skenwness. Following are the histograms for
 grades for both the subjects across the students’ relationship status.
 Math grades of students seem to be fairly normally distributed
 regardless of whether they are in a relationship or not, but for
-Portugese, there the distribution seems to be slightly negatively
-skewed.
+Portugese, the distribution seems to be slightly negatively skewed.
 
-<img src="../results/figures/math_plot.png" title="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
 
-<img src="../results/figures/por_plot.png" title="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
+<img src="../results/figures/math_plot.png" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" />
+
+<p class="caption">
+
+Figure 1. Maths grade distribution for students involved in a
+relationship and those who are not
+
+</p>
+
+</div>
+
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/por_plot.png" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" />
+
+<p class="caption">
+
+Figure 2. Portugese grade distribution for students involved in a
+relationship and those who are not
+
+</p>
+
+</div>
 
 Further, we looked at descriptive statistics, including mean, variance
 and counts among the levels of the binary variable for whether a student
-is involved in a romantic
-relationship.
+is involved in a romantic relationship.
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 
 <caption>
 
-Table 1. Descriptive Statistics for gardes of Maths
-students
+Table 1. Descriptive Statistics for gardes of Maths students
 
 </caption>
 
@@ -198,8 +217,7 @@ yes
 
 <caption>
 
-Table 2. Descriptive Statistics for gardes of Portugese
-students
+Table 2. Descriptive Statistics for gardes of Portugese students
 
 </caption>
 
@@ -378,10 +396,20 @@ gridExtra (Auguie 2017), tools (R Core Team 2019b), testthat (Wickham
 We set our level of significance at 5% and first computed the 95%
 Confidence Intervals (CIs) for both, Maths and Portugese total grades,
 for comparison between grades of students in a relationship and those
-who are
-not.
+who are not.
 
-<img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/distribution_mean_ci_comparison.png" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" />
+
+<p class="caption">
+
+Figure 3. Grade distribution overlayed with confidence intervals for
+mean total grade based on relationship status
+
+</p>
+
+</div>
 
 We notice that there is only a slight overlap between the CIs for both
 the cases, which led us to suspect that there may not be significant
@@ -392,10 +420,20 @@ The test statistic for Maths’ students was 2.412 and for Portugese’s
 students was 1.628.
 
 The simulating based null distribution along with the CIs and test
-statistic for both the subjects were visualized as
-follows:
+statistic for both the subjects were visualized as follows:
 
-<img src="../results/figures/permutation_test_comparison.png" title="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/permutation_test_comparison.png" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" />
+
+<p class="caption">
+
+Figure 4. Null distribution of grades overlayed with confidence
+intervals for mean total grade based and test statistics
+
+</p>
+
+</div>
 
 In both the cases, we observed that the test statistic lies beyond the
 confidence interval range. For Maths’ student grades, this value is very
@@ -735,7 +773,7 @@ Vienna, Austria: R Foundation for Statistical Computing.
 VanderPlas, Jacob, Brian Granger, Jeffrey Heer, Dominik Moritz, Kanit
 Wongsuphasawat, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert.
 2018. “Altair: Interactive Statistical Visualizations for Python.”
-*Journal of Open Source Software*, December. The Open Journal.
+*Journal of Open Source Software*, December.
 <https://doi.org/10.21105/joss.01057>.
 
 </div>

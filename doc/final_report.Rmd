@@ -1,7 +1,7 @@
 ---
 title: "Inferring association between romantic relationships and grades"
 always_allow_html: true
-output:
+output: 
   html_document:
     toc: true
 bibliography: references.bib
@@ -37,7 +37,8 @@ The analysis for this project has been conducted on data sets of secondary schoo
 
 The data details student performance indicators (grades) of secondary school students for two courses in the form of two data sets, one for Maths and one for Portugese, along with 30 features spanning information pertaining to school activities, social behaviour and family background.
 
-Our first step in exploring the data was looking at the distributions of grades of students for both the subjects to help us track cases of extreme outliers or extreme skenwness. Following are the histograms for grades for both the subjects across the students' relationship status. Math grades of students seem to be fairly normally distributed regardless of whether they are in a relationship or not, but for Portugese, there the distribution seems to be slightly negatively skewed.  
+Our first step in exploring the data was looking at the distributions of grades of students for both the subjects to help us track cases of extreme outliers or extreme skenwness. Following are the histograms for grades for both the subjects across the students' relationship status. Math grades of students seem to be fairly normally distributed regardless of whether they are in a relationship or not, but for Portugese, the distribution seems to be slightly negatively skewed.  
+
 
 ```{r math_grade_distribution, echo=FALSE, fig.cap="Figure 1. Maths grade distribution for students involved in a relationship and those who are not", out.width='60%', fig.align='center'}
 knitr::include_graphics("../results/figures/math_plot.png")
@@ -47,6 +48,7 @@ knitr::include_graphics("../results/figures/math_plot.png")
 ```{r port_grade_distribution, echo=FALSE, fig.cap="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not", out.width='60%', fig.align='center'}
 knitr::include_graphics("../results/figures/por_plot.png")
 ```
+
 
 Further, we looked at descriptive statistics, including mean, variance and counts among the levels of the binary variable for whether a student is involved in a romantic relationship.
 
@@ -79,9 +81,11 @@ Both R [@R] and Python [@Python] programming languages were used along with pack
 
 We set our level of significance at 5% and first computed the 95% Confidence Intervals (CIs) for both, Maths and Portugese total grades, for comparison between grades of students in a relationship and those who are not.
 
+
 ```{r ci_over_plot, echo=FALSE, fig.cap="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status", out.width='80%', fig.align='center'}
 knitr::include_graphics("../results/figures/distribution_mean_ci_comparison.png")
 ```
+
 
 We notice that there is only a slight overlap between the CIs for both the cases, which led us to suspect that there may not be significant difference between the average total grades of students in a relationship and those who are not.
 
@@ -89,9 +93,11 @@ The test statistic for Maths' students was 2.412 and for Portugese's students wa
 
 The simulating based null distribution along with the CIs and test statistic for both the subjects were visualized as follows:
 
+
 ```{r null_distributions, echo=FALSE, fig.cap="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics", out.width='80%', fig.align='center'}
 knitr::include_graphics("../results/figures/permutation_test_comparison.png")
 ```
+
 
 In both the cases, we observed that the test statistic lies beyond the confidence interval range. For Maths' student grades, this value is very close to the upper CI value. Further, p values for both the tests are
 
