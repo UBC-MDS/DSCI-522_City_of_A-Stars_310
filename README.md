@@ -30,22 +30,22 @@ To replicate this analysis, clone this GitHub repository, and run the following 
 
   - download data
   
-  python scripts/data_download.py –url=https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip --destination=data/
+  `python scripts/data_download.py –url=https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip --destination=data/`
   
   - clean the data
   
-  python scripts/data_cleaning.py --file_path=data/ --clean_path=data/
+  `python scripts/data_cleaning.py --file_path=data/ --clean_path=data/`
   
   - run the eda script
   
-  python scripts/eda_script.py --file_path=data/ --results_path=results/
+  `python scripts/eda_script.py --file_path=data/ --results_path=results/`
   
   - run the statistical analysis script
   
-  Rscript scripts/statistical_analysis_results.r –test=data/student-combined_clean.csv --out_dir=results/figures
+  `Rscript scripts/statistical_analysis_results.r –test=data/student-combined_clean.csv --out_dir=results/figures`
   
   - render the final report
   
-  Rscript -e "rmarkdown::render('doc/final_report.Rmd')"
+  `Rscript -e "rmarkdown::render('doc/final_report.Rmd')"`
   
   
