@@ -365,12 +365,13 @@ is not the same as for students who are not in a
 relationship}](https://latex.codecogs.com/png.latex?H_1%3A%20%5Ctext%7BAverage%20total%20grade%20of%20students%20who%20are%20in%20a%20relationship%20is%20not%20the%20same%20as%20for%20students%20who%20are%20not%20in%20a%20relationship%7D
 "H_1: \\text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}")  
 
-Both R (R Core Team 2019) and Python (Van Rossum and Drake 2009)
+Both R (R Core Team 2019a) and Python (Van Rossum and Drake 2009)
 programming languages were used along with packages including docopt (de
 Jonge, n.d.), tidyverse (Wickham et al. 2019), knitr (Xie 2019), cowplot
 (Wilke 2019), infer (Bray et al. 2019), ggthemes (Arnold 2019),
-gridExtra (Auguie 2017), NumPy (Oliphant 2006), pandas (McKinney 2010),
-altair (VanderPlas et al. 2018).
+gridExtra (Auguie 2017), tools (R Core Team 2019b), testthat (Wickham
+2011), kableExtra (Zhu 2019), NumPy (Oliphant 2006), pandas (McKinney
+2010), altair (VanderPlas et al. 2018).
 
 # Results & Discussions
 
@@ -380,7 +381,7 @@ for comparison between grades of students in a relationship and those
 who are
 not.
 
-<img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="85%" style="display: block; margin: auto;" />
+<img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" style="display: block; margin: auto;" />
 
 We notice that there is only a slight overlap between the CIs for both
 the cases, which led us to suspect that there may not be significant
@@ -394,7 +395,7 @@ The simulating based null distribution along with the CIs and test
 statistic for both the subjects were visualized as
 follows:
 
-<img src="../results/figures/permutation_test_comparison.png" title="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="85%" style="display: block; margin: auto;" />
+<img src="../results/figures/permutation_test_comparison.png" title="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" style="display: block; margin: auto;" />
 
 In both the cases, we observed that the test statistic lies beyond the
 confidence interval range. For Maths’ student grades, this value is very
@@ -715,8 +716,16 @@ Oliphant, Travis. 2006. *A Guide to Numpy*. USA: Trelgol Publishing.
 
 <div id="ref-R">
 
-R Core Team. 2019. *R: A Language and Environment for Statistical
+R Core Team. 2019a. *R: A Language and Environment for Statistical
 Computing*. Vienna, Austria: R Foundation for Statistical Computing.
+<https://www.R-project.org/>.
+
+</div>
+
+<div id="ref-tools">
+
+———. 2019b. *R: A Language and Environment for Statistical Computing*.
+Vienna, Austria: R Foundation for Statistical Computing.
 <https://www.R-project.org/>.
 
 </div>
@@ -735,6 +744,14 @@ Wongsuphasawat, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert.
 
 Van Rossum, Guido, and Fred L. Drake. 2009. *Python 3 Reference Manual*.
 Scotts Valley, CA: CreateSpace.
+
+</div>
+
+<div id="ref-testthat">
+
+Wickham, Hadley. 2011. “Testthat: Get Started with Testing.” *The R
+Journal* 3: 5–10.
+<https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf>.
 
 </div>
 
@@ -759,6 +776,13 @@ Annotations for ’Ggplot2’*.
 
 Xie, Yihui. 2019. *Knitr: A General-Purpose Package for Dynamic Report
 Generation in R*.
+
+</div>
+
+<div id="ref-kableextra">
+
+Zhu, Hao. 2019. *KableExtra: Construct Complex Table with ’Kable’ and
+Pipe Syntax*. <https://CRAN.R-project.org/package=kableExtra>.
 
 </div>
 

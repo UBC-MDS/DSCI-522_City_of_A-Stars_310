@@ -72,14 +72,14 @@ $$H_0: \text{Average total grade of students who are in a relationship is same a
 $$H_1: \text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}$$
 
 
-Both R [@R] and Python [@Python] programming languages were used along with packages including docopt [@docopt], tidyverse [@tidyverse], knitr [@knitr], cowplot [@cowplot], infer [@infer], ggthemes [@ggthemes], gridExtra [@grid_extra], NumPy [@numpy], pandas [@pandas], altair [@altair]. 
+Both R [@R] and Python [@Python] programming languages were used along with packages including docopt [@docopt], tidyverse [@tidyverse], knitr [@knitr], cowplot [@cowplot], infer [@infer], ggthemes [@ggthemes], gridExtra [@grid_extra], tools [@tools], testthat [@testthat], kableExtra [@kableextra], NumPy [@numpy], pandas [@pandas], altair [@altair]. 
 
 
 # Results & Discussions
 
 We set our level of significance at 5% and first computed the 95% Confidence Intervals (CIs) for both, Maths and Portugese total grades, for comparison between grades of students in a relationship and those who are not.
 
-```{r ci_over_plot, echo=FALSE, fig.cap="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status", out.width='85%', fig.align='center'}
+```{r ci_over_plot, echo=FALSE, fig.cap="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status", out.width='80%', fig.align='center'}
 knitr::include_graphics("../results/figures/distribution_mean_ci_comparison.png")
 ```
 
@@ -89,7 +89,7 @@ The test statistic for Maths' students was 2.412 and for Portugese's students wa
 
 The simulating based null distribution along with the CIs and test statistic for both the subjects were visualized as follows:
 
-```{r null_distributions, echo=FALSE, fig.cap="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics", out.width='85%', fig.align='center'}
+```{r null_distributions, echo=FALSE, fig.cap="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics", out.width='80%', fig.align='center'}
 knitr::include_graphics("../results/figures/permutation_test_comparison.png")
 ```
 
