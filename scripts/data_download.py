@@ -6,12 +6,20 @@ file location as the arguments.
 Usage: data_download.py --url=<url> --destination=<destination>
 
 Options:
+<<<<<<< HEAD
 url=<url> The url containing the zip files
+=======
+<url> The url containing the zip files
+>>>>>>> upstream/master
 --destination=<destination>  Path where files are to be saved
 '''
 import requests, zipfile, io, pytest
 from docopt import docopt
 opt = docopt(__doc__)
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 def main(url, destination):
     """ 
     This function downloads , unzips and saves a .zip from a determined URL into a determined file path.
@@ -22,7 +30,7 @@ def main(url, destination):
         The Url where the zip file to be downloaded/extracted/saved is located.
     
     destination: str
-        Destination's local path, where uzipped files are to be saved.
+        Destination's local path, where unzipped files are to be saved.
     
     Returns
     ---------
