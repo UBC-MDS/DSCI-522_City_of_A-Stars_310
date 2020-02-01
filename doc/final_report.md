@@ -89,65 +89,27 @@ students
 
 <tr>
 
-<th style="border-bottom:hidden" colspan="1">
+<th style="text-align:left;">
+
+romantic
 
 </th>
 
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+<th style="text-align:right;">
 
 count
 
-</div>
-
 </th>
 
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+<th style="text-align:right;">
 
 mean
 
-</div>
-
 </th>
 
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="text-align:right;">
 
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-variance
-
-</div>
-
-</th>
-
-</tr>
-
-<tr>
-
-<th style="text-align:left;">
-
-yes
-
-</th>
-
-<th style="text-align:left;">
-
-132
-
-</th>
-
-<th style="text-align:left;">
-
-30.4318
-
-</th>
-
-<th style="text-align:left;">
-
-11.0834
+std
 
 </th>
 
@@ -158,6 +120,58 @@ yes
 <tbody>
 
 <tr>
+
+<td style="text-align:left;">
+
+no
+
+</td>
+
+<td style="text-align:right;">
+
+263
+
+</td>
+
+<td style="text-align:right;">
+
+32.8441
+
+</td>
+
+<td style="text-align:right;">
+
+11.0268
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+yes
+
+</td>
+
+<td style="text-align:right;">
+
+132
+
+</td>
+
+<td style="text-align:right;">
+
+30.4318
+
+</td>
+
+<td style="text-align:right;">
+
+11.0834
+
+</td>
 
 </tr>
 
@@ -169,8 +183,7 @@ yes
 
 <caption>
 
-Table 2. Descriptive Statistics for gardes of Portugese
-students
+Table 2. Descriptive Statistics for gardes of Portugese students
 
 </caption>
 
@@ -178,65 +191,27 @@ students
 
 <tr>
 
-<th style="border-bottom:hidden" colspan="1">
+<th style="text-align:left;">
+
+romantic
 
 </th>
 
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+<th style="text-align:right;">
 
 count
 
-</div>
-
 </th>
 
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+<th style="text-align:right;">
 
 mean
 
-</div>
-
 </th>
 
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="text-align:right;">
 
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-variance
-
-</div>
-
-</th>
-
-</tr>
-
-<tr>
-
-<th style="text-align:left;">
-
-yes
-
-</th>
-
-<th style="text-align:left;">
-
-239
-
-</th>
-
-<th style="text-align:left;">
-
-33.8494
-
-</th>
-
-<th style="text-align:left;">
-
-8.8571
+std
 
 </th>
 
@@ -247,6 +222,58 @@ yes
 <tbody>
 
 <tr>
+
+<td style="text-align:left;">
+
+no
+
+</td>
+
+<td style="text-align:right;">
+
+410
+
+</td>
+
+<td style="text-align:right;">
+
+35.4732
+
+</td>
+
+<td style="text-align:right;">
+
+8.2370
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+yes
+
+</td>
+
+<td style="text-align:right;">
+
+239
+
+</td>
+
+<td style="text-align:right;">
+
+33.8494
+
+</td>
+
+<td style="text-align:right;">
+
+8.8571
+
+</td>
 
 </tr>
 
@@ -401,13 +428,13 @@ Math
 
 <td style="text-align:right;">
 
-31.654
+31.627
 
 </td>
 
 <td style="text-align:right;">
 
-34.130
+34.308
 
 </td>
 
@@ -431,7 +458,7 @@ no
 
 <td style="text-align:right;">
 
-0.041
+0.042
 
 </td>
 
@@ -447,13 +474,13 @@ Math
 
 <td style="text-align:right;">
 
-28.704
+28.469
 
 </td>
 
 <td style="text-align:right;">
 
-32.144
+32.220
 
 </td>
 
@@ -477,7 +504,7 @@ yes
 
 <td style="text-align:right;">
 
-0.041
+0.042
 
 </td>
 
@@ -493,13 +520,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-34.712
+34.690
 
 </td>
 
 <td style="text-align:right;">
 
-36.305
+36.290
 
 </td>
 
@@ -523,7 +550,7 @@ no
 
 <td style="text-align:right;">
 
-0.018
+0.019
 
 </td>
 
@@ -539,13 +566,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-32.690
+32.694
 
 </td>
 
 <td style="text-align:right;">
 
-34.950
+34.971
 
 </td>
 
@@ -569,7 +596,7 @@ yes
 
 <td style="text-align:right;">
 
-0.018
+0.019
 
 </td>
 

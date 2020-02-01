@@ -15,8 +15,8 @@ library(tidyverse)
 ```
 
 ```{r load model results, include=FALSE}
-table_math_eda <- read_csv("../results/math_table.csv", skip = 2)
-table_por_eda <- read_csv("../results/por_table.csv", skip = 2)
+table_math_eda <- read_csv("../results/math_table.csv")
+table_por_eda <- read_csv("../results/por_table.csv")
 table <- readRDS("../results/figures/result_metrics_summary.rds")
 ```
 
@@ -54,15 +54,13 @@ Further, we looked at descriptive statistics, including mean, variance and count
 
 ```{r math_descriptive_stats, echo=FALSE}
 kable(table_math_eda, caption = "Table 1. Descriptive Statistics for gardes of Maths students") %>%
-  kable_styling(full_width = F) %>%
-  add_header_above(c(" ", "count", "mean", "variance"))
+  kable_styling(full_width = F)
 ```
 
 
 ```{r echo=FALSE}
 kable(table_por_eda, caption = "Table 2. Descriptive Statistics for gardes of Portugese students") %>%
-  kable_styling(bootstrap_options = "striped", full_width = F) %>%
-  add_header_above(c(" ", "count", "mean", "variance"))
+  kable_styling(bootstrap_options = "striped", full_width = F)
 ```
 There does not seem to be much difference between the variance of students who are in a relationship and those who are not for both the subjects. But, we did notice a case of class imbalance with the proportion of students involved in a relationship being nearly a third of the total sample of students for both the subjects.
 
