@@ -1,10 +1,13 @@
 # author: A. Muhammad
-# date: 2020-01-18
+# date: 2020-02-01
 
 '''This script cleans the raw math and portuguese
 students performance data.
 
 Usage: data_cleaning.py --file_path=<file_path> --clean_path=<clean_path>
+
+Example:
+    python scripts/data_cleaning.py --file_path=data/ --clean_path=data/
 
 Options:
 --file_path=<file_path>  Path (excluding filenames) to the csv file.
@@ -22,6 +25,9 @@ import os
 opt = docopt(__doc__)
 
 def test_function():
+    '''
+    Tests the input data and specified paths.
+    '''
     file_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--file_path"]) 
     out_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--clean_path"])
     assert file_path_check == None, "you can not have extensions in path, only directories."
@@ -63,6 +69,10 @@ def main(file_path, clean_path):
     df_combined.to_csv(clean_path + "student-combined_clean.csv", index= False)
 
 def sex_decoding(sex):
+    '''
+    Decodes sex from M/F to full form
+    Male and Female.
+    '''
     if sex == "M":
         return "Male"
     else:

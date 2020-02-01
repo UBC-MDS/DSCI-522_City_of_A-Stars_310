@@ -1,5 +1,3 @@
-,total_grade,total_grade,total_grade
-,count,mean,var
-romantic,,,
-no,410,35.47317073170732,67.84891168227074
-yes,239,33.84937238493724,78.44780422629303
+romantic,count,mean,std
+no,410,35.4732,8.237
+yes,239,33.8494,8.8571
