@@ -44,9 +44,32 @@ regardless of whether they are in a relationship or not, but for
 Portugese, the distribution seems to be slightly negatively
 skewed.
 
-<img src="../results/figures/math_plot.png" title="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
 
-<img src="../results/figures/por_plot.png" title="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
+<img src="../results/figures/math_plot.png" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" />
+
+<p class="caption">
+
+Figure 1. Maths grade distribution for students involved in a
+relationship and those who are
+not
+
+</p>
+
+</div>
+
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/por_plot.png" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" />
+
+<p class="caption">
+
+Figure 2. Portugese grade distribution for students involved in a
+relationship and those who are not
+
+</p>
+
+</div>
 
 Further, we looked at descriptive statistics, including mean, variance
 and counts among the levels of the binary variable for whether a student
@@ -274,21 +297,12 @@ use of 4 columns from each data set (Maths and Portugese), a binary
 variable for whether a student is in a romantic relationship and 3
 columns for grades throughout the year (on a scale of 0-20). The grades
 received throughout the year were added and have been used as ‘total
-grades’ (on a sclae of 0-60) for the analysis. The null
-(![H\_0](https://latex.codecogs.com/png.latex?H_0 "H_0")) and alternate
-hypothesis (![H\_1](https://latex.codecogs.com/png.latex?H_1 "H_1")) set
-up for both the subjects were as follows
+grades’ (on a sclae of 0-60) for the analysis. The null (\(H_0\)) and
+alternate hypothesis (\(H_1\)) set up for both the subjects were as
+follows
 
-  
-![H\_0: \\text{Average total grade of students who are in a relationship
-is same as for students who are not in a
-relationship}](https://latex.codecogs.com/png.latex?H_0%3A%20%5Ctext%7BAverage%20total%20grade%20of%20students%20who%20are%20in%20a%20relationship%20is%20same%20as%20for%20students%20who%20are%20not%20in%20a%20relationship%7D
-"H_0: \\text{Average total grade of students who are in a relationship is same as for students who are not in a relationship}")  
-  
-![H\_1: \\text{Average total grade of students who are in a relationship
-is not the same as for students who are not in a
-relationship}](https://latex.codecogs.com/png.latex?H_1%3A%20%5Ctext%7BAverage%20total%20grade%20of%20students%20who%20are%20in%20a%20relationship%20is%20not%20the%20same%20as%20for%20students%20who%20are%20not%20in%20a%20relationship%7D
-"H_1: \\text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}")  
+\[H_0: \text{Average total grade of students who are in a relationship is same as for students who are not in a relationship}\]
+\[H_1: \text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}\]
 
 Both R (R Core Team 2019a) and Python (Van Rossum and Drake 2009)
 programming languages were used along with packages including docopt (de
@@ -306,7 +320,18 @@ for comparison between grades of students in a relationship and those
 who are
 not.
 
-<img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/distribution_mean_ci_comparison.png" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" />
+
+<p class="caption">
+
+Figure 3. Grade distribution overlayed with confidence intervals for
+mean total grade based on relationship status
+
+</p>
+
+</div>
 
 We notice that there is not much overlap between the CIs for both the
 cases. This implies that there are only a few points from the range of
@@ -322,7 +347,18 @@ The simulation based null distribution along with the CIs and test
 statistic for both the subjects were visualized as
 follows:
 
-<img src="../results/figures/permutation_test_comparison.png" title="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/permutation_test_comparison.png" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" />
+
+<p class="caption">
+
+Figure 4. Null distribution of grades overlayed with confidence
+intervals for mean total grade based and test statistics
+
+</p>
+
+</div>
 
 In both the cases, we observed that the test statistic lies beyond the
 confidence interval range. For Maths’ student grades, this value is very
@@ -392,13 +428,13 @@ Math
 
 <td style="text-align:right;">
 
-31.445
+31.627
 
 </td>
 
 <td style="text-align:right;">
 
-34.145
+34.308
 
 </td>
 
@@ -422,7 +458,7 @@ no
 
 <td style="text-align:right;">
 
-0.045
+0.042
 
 </td>
 
@@ -438,13 +474,13 @@ Math
 
 <td style="text-align:right;">
 
-28.666
+28.469
 
 </td>
 
 <td style="text-align:right;">
 
-32.371
+32.220
 
 </td>
 
@@ -468,7 +504,7 @@ yes
 
 <td style="text-align:right;">
 
-0.045
+0.042
 
 </td>
 
@@ -484,13 +520,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-34.661
+34.690
 
 </td>
 
 <td style="text-align:right;">
 
-36.322
+36.290
 
 </td>
 
@@ -514,7 +550,7 @@ no
 
 <td style="text-align:right;">
 
-0.018
+0.019
 
 </td>
 
@@ -530,13 +566,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-32.686
+32.694
 
 </td>
 
 <td style="text-align:right;">
 
-34.950
+34.971
 
 </td>
 
@@ -560,7 +596,7 @@ yes
 
 <td style="text-align:right;">
 
-0.018
+0.019
 
 </td>
 

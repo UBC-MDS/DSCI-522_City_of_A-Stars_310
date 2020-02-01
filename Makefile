@@ -12,7 +12,7 @@ results/figures/result_metrics_summary.rds results/figures/distribution_mean_ci_
 
 # Written by S.Trehan on 2020-02-01 to render final report 
 doc/final_report.md: doc/final_report.Rmd doc/references.bib results/math_table.csv results/por_table.csv results/figures/math_plot.png results/figures/por_plot.png
-	Rscript -e "rmarkdown::render('doc/final_report.Rmd', output_format = 'github_document')"
+	Rscript -e "library(rmarkdown);render('doc/final_report.Rmd', output_format = 'github_document')"
 
 # Written by A. Muhammad on 2020-02-01 to clean the raw data
 data/student-mat_clean.csv data/student-por_clean.csv: data/student-mat.csv data/student-por.csv
