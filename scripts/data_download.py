@@ -5,6 +5,9 @@ This script takes a url to the data and a
 file location as the arguments.
 Usage: data_download.py --url=<url> --destination=<destination>
 
+Example:
+    python data_download.py --url="https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip" --destination="../data"
+
 Options:
 url=<url> The url containing the zip files
 --destination=<destination>  Path where files are to be saved

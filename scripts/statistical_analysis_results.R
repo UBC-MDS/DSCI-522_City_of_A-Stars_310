@@ -88,7 +88,7 @@ main <- function(test, out_dir) {
     
     # plot estimates and ci's
     
-    plot_title = titles <- c("Distribution,CI, Mean Comparison - Course: Math","Distribution,CI, Mean Comparison - Course: Portuguese")
+    plot_title = titles <- c("Dist,CI, Mean Comparison : Math","Dist,CI, Mean Comparison : Portuguese")
     
     options(repr.plot.width = 8, repr.plot.height = 6)
     plot <- ggplot(data, aes(x = romantic, y = total_grade)) +
@@ -100,7 +100,11 @@ main <- function(test, out_dir) {
       theme_economist() + scale_colour_economist() +
       xlab("In a Romantic Relationship or Not") +
       scale_y_continuous(name = "Total Grade",breaks = c(0, 10, 20,30,40,50,60), limits = c(0,60))+
-      ggtitle(plot_title[i])
+      ggtitle(plot_title[i])+
+      theme(axis.text=element_text(size=18),
+        plot.title = element_text(size = 18, face = "bold"),
+        axis.title.x = element_text(size = 16),
+        axis.title.y = element_text(size = 16))
     global_plot_list[[i]] = plot
     
     ##Calculate t-statistic
@@ -116,14 +120,18 @@ main <- function(test, out_dir) {
     
     ## Permutation T-Statistic - Plotting
     
-    permut_plot_title = titles <- c("Permutation T-Statistic - Course: Math","Permutation T-Statistic - Course: Portuguese")
+    permut_plot_title = titles <- c("Permutation T-Statistic : Math","Permutation T-Statistic : Portuguese")
     
     permut_plot <- null_distribution_two_means %>% visualize() +
       geom_vline(xintercept = t_statistic, colour = "red") +
       geom_vline(xintercept = c(ci[[1]], ci[[2]]), color = "blue", lty = 2) +
       scale_y_continuous(name = "count",breaks = c(0, 500,1000,1500, 2000,2500,3000,3500), limits = c(0,3800))+
       labs(title =permut_plot_title[i])+
-      theme_economist() + scale_colour_economist()
+      theme_economist() + scale_colour_economist()+
+      theme(axis.text=element_text(size=18),
+              plot.title = element_text(size = 18, face = "bold"),
+              axis.title.x = element_text(size = 16),
+              axis.title.y = element_text(size = 16))  
     permutation_global_plot_list[[i]] = permut_plot
     
     ##Saving Metrics Results
@@ -145,6 +153,8 @@ main <- function(test, out_dir) {
   ## Plot and result exporting
   
   result_metrics <- bind_rows(metrics_results_list[[1]], metrics_results_list[[2]])
+  colnames(result_metrics) <- c('Course','Lower CI','Upper CI','Mean Grade','In Romantic Rel.','T-Statistic','P-Value')
+  result_metrics = data.frame(lapply(result_metrics, function(y) if(is.numeric(y)) round(y, 3) else y))
   png(filename = paste0(out_dir, "/result_metrics_summary.png"), width=480,height=480,bg = "white")
   grid.table(result_metrics)
   dev.off()
@@ -152,7 +162,7 @@ main <- function(test, out_dir) {
   
   saveRDS(result_metrics, file = paste0(out_dir, "/result_metrics_summary.rds"))
   
-  options(repr.plot.width = 14, repr.plot.height = 6)
+  options(repr.plot.width = 16, repr.plot.height = 6)
   grid_plot_distribution_mean_ci_comparison <- plot_grid(
     global_plot_list[[1]],global_plot_list[[2]],
     align = "h",labels="AUTO",scale = 0.9)
