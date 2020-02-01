@@ -66,44 +66,6 @@ students
 
 <tr>
 
-<th style="border-bottom:hidden" colspan="1">
-
-</th>
-
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-count
-
-</div>
-
-</th>
-
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-mean
-
-</div>
-
-</th>
-
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-variance
-
-</div>
-
-</th>
-
-</tr>
-
-<tr>
-
 <th style="text-align:left;">
 
 romantic
@@ -112,19 +74,19 @@ romantic
 
 <th style="text-align:right;">
 
-X2
+count
 
 </th>
 
 <th style="text-align:right;">
 
-X3
+mean
 
 </th>
 
 <th style="text-align:right;">
 
-X4
+std
 
 </th>
 
@@ -150,13 +112,13 @@ no
 
 <td style="text-align:right;">
 
-32.84411
+32.8441
 
 </td>
 
 <td style="text-align:right;">
 
-121.5901
+11.0268
 
 </td>
 
@@ -178,13 +140,13 @@ yes
 
 <td style="text-align:right;">
 
-30.43182
+30.4318
 
 </td>
 
 <td style="text-align:right;">
 
-122.8426
+11.0834
 
 </td>
 
@@ -198,50 +160,11 @@ yes
 
 <caption>
 
-Table 2. Descriptive Statistics for gardes of Portugese
-students
+Table 2. Descriptive Statistics for gardes of Portugese students
 
 </caption>
 
 <thead>
-
-<tr>
-
-<th style="border-bottom:hidden" colspan="1">
-
-</th>
-
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-count
-
-</div>
-
-</th>
-
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-mean
-
-</div>
-
-</th>
-
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-variance
-
-</div>
-
-</th>
-
-</tr>
 
 <tr>
 
@@ -253,19 +176,19 @@ romantic
 
 <th style="text-align:right;">
 
-X2
+count
 
 </th>
 
 <th style="text-align:right;">
 
-X3
+mean
 
 </th>
 
 <th style="text-align:right;">
 
-X4
+std
 
 </th>
 
@@ -291,13 +214,13 @@ no
 
 <td style="text-align:right;">
 
-35.47317
+35.4732
 
 </td>
 
 <td style="text-align:right;">
 
-67.84891
+8.2370
 
 </td>
 
@@ -319,13 +242,13 @@ yes
 
 <td style="text-align:right;">
 
-33.84937
+33.8494
 
 </td>
 
 <td style="text-align:right;">
 
-78.44780
+8.8571
 
 </td>
 
@@ -419,37 +342,37 @@ Course
 
 <th style="text-align:right;">
 
-lower
+Lower.CI
 
 </th>
 
 <th style="text-align:right;">
 
-upper
+Upper.CI
 
 </th>
 
 <th style="text-align:right;">
 
-mean
+Mean.Grade
 
 </th>
 
 <th style="text-align:left;">
 
-romantic
+In.Romantic.Rel.
 
 </th>
 
 <th style="text-align:right;">
 
-t\_statistic
+T.Statistic
 
 </th>
 
 <th style="text-align:right;">
 
-p\_value
+P.Value
 
 </th>
 
@@ -469,19 +392,19 @@ Math
 
 <td style="text-align:right;">
 
-31.49392
+31.445
 
 </td>
 
 <td style="text-align:right;">
 
-34.23260
+34.145
 
 </td>
 
 <td style="text-align:right;">
 
-32.84411
+32.844
 
 </td>
 
@@ -493,13 +416,13 @@ no
 
 <td style="text-align:right;">
 
-2.412288
+2.412
 
 </td>
 
 <td style="text-align:right;">
 
-0.0444000
+0.045
 
 </td>
 
@@ -515,19 +438,19 @@ Math
 
 <td style="text-align:right;">
 
-28.62102
+28.666
 
 </td>
 
 <td style="text-align:right;">
 
-32.25019
+32.371
 
 </td>
 
 <td style="text-align:right;">
 
-30.43182
+30.432
 
 </td>
 
@@ -539,13 +462,13 @@ yes
 
 <td style="text-align:right;">
 
-2.412288
+2.412
 
 </td>
 
 <td style="text-align:right;">
 
-0.0444000
+0.045
 
 </td>
 
@@ -561,19 +484,19 @@ Portuguese
 
 <td style="text-align:right;">
 
-34.67524
+34.661
 
 </td>
 
 <td style="text-align:right;">
 
-36.32213
+36.322
 
 </td>
 
 <td style="text-align:right;">
 
-35.47317
+35.473
 
 </td>
 
@@ -585,13 +508,13 @@ no
 
 <td style="text-align:right;">
 
-1.623798
+1.624
 
 </td>
 
 <td style="text-align:right;">
 
-0.0185333
+0.018
 
 </td>
 
@@ -607,19 +530,19 @@ Portuguese
 
 <td style="text-align:right;">
 
-32.75251
+32.686
 
 </td>
 
 <td style="text-align:right;">
 
-35.02929
+34.950
 
 </td>
 
 <td style="text-align:right;">
 
-33.84937
+33.849
 
 </td>
 
@@ -631,13 +554,13 @@ yes
 
 <td style="text-align:right;">
 
-1.623798
+1.624
 
 </td>
 
 <td style="text-align:right;">
 
-0.0185333
+0.018
 
 </td>
 
