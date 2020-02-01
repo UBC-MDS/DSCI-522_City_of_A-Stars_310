@@ -61,3 +61,4 @@ R version 3.6.1 and R packages:
   - testthat==2.3.1
   - knitr==1.26
   - kableExtra==1.1.0
+  - rmarkdown==2.1
