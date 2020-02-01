@@ -1,4 +1,12 @@
-all: data/student-por.csv data/student-mat.csv data/student-mat_clean.csv data/student-por_clean.csv results/math_table.csv results/por_table.csv results/figures/result_metrics_summary.rds results/figures/math_plot.png results/figures/por_plot.png results/figures/distribution_mean_ci_comparison.png results/figures/permutation_test_comparison.png
+all: data/student-por.csv data/student-mat.csv data/student-mat_clean.csv data/student-por_clean.csv results/math_table.csv results/por_table.csv results/figures/result_metrics_summary.rds results/figures/math_plot.png results/figures/por_plot.png results/figures/distribution_mean_ci_comparison.png results/figures/permutation_test_comparison.png doc/final_report.md
+
+# Data Download
+data/student-por.csv data/student-mat.csv: scripts/data_download.py
+	python scripts/data_download.py --url="https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip" --destination="data/"
+
+# Hypothesis-Analysis
+result_metrics_summary.rds distribution_mean_ci_comparison.png permutation_test_comparison.png: scripts/statistical_analysis_results.R
+	Rscript scripts/statistical_analysis_results.R --test=data/df_combined.csv --out_dir=results/figures
 
 # render report
 doc/final_report.md: doc/final_report.Rmd doc/references.bib results/math_table.csv results/por_table.csv results/figures/math_plot.png results/figures/por_plot.png
@@ -17,3 +25,4 @@ clean:
 	rm -rf results/figures/*
 	rm -rf results/*.csv
 	rm -rf doc/final_report.md doc/final_report.html
+
