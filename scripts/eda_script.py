@@ -1,11 +1,14 @@
 # author: A. Muhammad
-# date: 2020-01-18
+# date: 2020-02-01
 
 '''This script performs EDA on the students performance datasets
 for portuguese and math students and outputs necessary tables and
 figures to path provided.
 
 Usage: eda_script.py --file_path=<file_path> --results_path=<results_path>
+
+Example: 
+    python scripts/eda_script.py --file_path=data/ --results_path=results/
 
 Options:
 --file_path=<file_path>  Path (excluding filenames) to the csv file.
@@ -23,6 +26,10 @@ import os
 opt = docopt(__doc__)
 
 def test_function():
+    """
+    Tests the input and output
+    file paths.
+    """
     file_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--file_path"]) 
     out_path_check = re.match("([A-Za-z]+[.]{1}[A-Za-z]+)", opt["--results_path"])
     assert file_path_check == None, "you can not have extensions in path, only directories."
@@ -52,14 +59,12 @@ def main(file_path, results_path):
     
     ## tables
     # agg table math
-    df_math_agg = df_mat[["romantic", "total_grade"]].groupby("romantic").agg(['count', 'mean', 'var'])
-    df_math_agg.to_csv(results_path + "math_table.csv")
+    df_math_agg = df_mat[["romantic", "total_grade"]].groupby("romantic").agg(['count', 'mean', 'std'])
+    df_math_agg['total_grade'].reset_index().round(4).to_csv(results_path + "math_table.csv", index=False)
 
     # agg table por
-    df_por_agg = df_por[["romantic", "total_grade"]].groupby("romantic").agg(['count', 'mean', 'var'])
-    df_por_agg.to_csv(results_path + "por_table.csv")
-
-
+    df_por_agg = df_por[["romantic", "total_grade"]].groupby("romantic").agg(['count', 'mean', 'std'])
+    df_por_agg['total_grade'].reset_index().round(4).to_csv(results_path + "por_table.csv", index=False)
 
     ## print certain findings
     print("{} math students were in relationships and {} were not.".format(
@@ -82,7 +87,7 @@ def main(file_path, results_path):
         'total_grade',
         as_=['total_grade', 'density'],
     ).mark_bar().encode(
-        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=10)),
+        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=5)),
         y='density:Q',
     ).properties(
         width = 300,
@@ -93,7 +98,7 @@ def main(file_path, results_path):
         'total_grade',
         as_=['total_grade', 'density'],
     ).mark_bar(color='orange').encode(
-        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=10)),
+        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=5)),
         y='density:Q',
     ).properties(
         width = 300,
@@ -110,7 +115,7 @@ def main(file_path, results_path):
         'total_grade',
         as_=['total_grade', 'density'],
     ).mark_bar().encode(
-        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=10)),
+        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=5)),
         y='density:Q',
     ).properties(
         width = 300,
@@ -121,7 +126,7 @@ def main(file_path, results_path):
         'total_grade',
         as_=['total_grade', 'density'],
     ).mark_bar(color='orange').encode(
-        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=10)),
+        x=alt.X("total_grade:Q", title="Total grade", bin = alt.Bin(extent=[0, 60], step=5)),
         y='density:Q',
     ).properties(
         width = 300,
@@ -139,6 +144,12 @@ def main(file_path, results_path):
 
 
 def mds_special():
+    """
+    Applies mds_special theme to plots 
+    created by
+    Firas Moosvi, instructor at UBC 
+    Master of Data Science program.
+    """
     font = "Arial"
     axisColor = "#000000"
     gridColor = "#DEDDDD"
