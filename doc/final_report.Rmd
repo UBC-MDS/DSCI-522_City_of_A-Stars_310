@@ -68,7 +68,7 @@ There does not seem to be much difference between the variance of students who a
 
 ### Analysis
 
-We carried out two Permuation test (one for subject Maths and one for Portugese). The choice of test was influenced by the fact that Permuation Tests are a good choice for analysis of unbalanced classes. For the purpose of our analysis, we only made use of 4 columns, a binary variable for whether a student is in a romantic relationship and 3 columns for grades throughout the year (on a scale of 0-20) which were used as totals from both data sets (for Maths and Portugese). The null ($H_0$) and alternate hypothesis ($H_1$) set up for both the subjects were as follows
+We carried out two Permuation tests (one for subject Maths and one for Portugese). The choice of test was influenced by the fact that Permuation Tests are a good choice for analysis of unbalanced classes [@perm_test]. For the purpose of our analysis, we made use of 4 columns from each data set (Maths and Portugese), a binary variable for whether a student is in a romantic relationship and 3 columns for grades throughout the year (on a scale of 0-20). The grades received throughout the year were added and have been used as 'total grades' (on a sclae of 0-60) for the analysis. The null ($H_0$) and alternate hypothesis ($H_1$) set up for both the subjects were as follows
 
 $$H_0: \text{Average total grade of students who are in a relationship is same as for students who are not in a relationship}$$
 $$H_1: \text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}$$
@@ -86,12 +86,11 @@ We set our level of significance at 5% and first computed the 95% Confidence Int
 knitr::include_graphics("../results/figures/distribution_mean_ci_comparison.png")
 ```
 
-
-We notice that there is only a slight overlap between the CIs for both the cases, which led us to suspect that there may not be significant difference between the average total grades of students in a relationship and those who are not.
+We notice that there is not much overlap between the CIs for both the cases. This implies that there are only a few points from the range of plausible values in which the true value of average total grade of students lies with a 95% probability, and hence, it may happen that there may not be significant difference between the average total grades of students in a relationship and those who are not.
 
 The test statistic for Maths' students was 2.412 and for Portugese's students was 1.628.
 
-The simulating based null distribution along with the CIs and test statistic for both the subjects were visualized as follows:
+The simulation based null distribution along with the CIs and test statistic for both the subjects were visualized as follows:
 
 
 ```{r null_distributions, echo=FALSE, fig.cap="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics", out.width='80%', fig.align='center'}
@@ -106,8 +105,8 @@ kable(table) %>%
   kable_styling()
 ```
 
-The p-values for both the tests are less than 0.05, our criteria for level of significance, which implies that the we have enough evidence to reject the null hypothesis and that the results are statiscally significant.
+The p-values for both the tests are less than 0.05, our criteria for level of significance, which implies that the we have enough evidence to reject the null hypothesis and that the results are statiscally significant. Thus, we can conclude that, for both Maths and Portugese, there is a statistically significant difference between the average overall grades of students who are in a relationship and those who are not.
 
-The results of our study are currently only based on confidence intervals and p-values. As our next step, to further improve this analysis and compare the significance of results obtained from both the hypothesis tests, we would look into the effect size for Maths and Portugese students. We would also like to extend the study and explore whether the grades of students are influenced by a combination of factors, such as, being in a relationship and their gender, which could be approached by hypothesis testing techniques such as multi-factor ANOVA.
+The results of our study are currently only based on confidence intervals and p-values. These statistics alone are not enough to predict effect size or plausible difference in magnitude of the effect grades have on students of both the subjects. As our next step, to further improve this analysis and compare the significance of results obtained from both the hypothesis tests, we would look into the effect size for Maths and Portugese students. We would also like to extend the study and explore whether the grades of students are influenced by a combination of factors, such as, being in a relationship and their gender, which could be approached by hypothesis testing techniques such as multi-factor ANOVA.
 
 # References
