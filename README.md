@@ -26,26 +26,38 @@ The final report can be found [here](https://github.com/UBC-MDS/DSCI-522_City_of
 
 ## Usage
 
-To replicate this analysis, clone this GitHub repository, and run the following commands at the comman line/terminal from the root directory of this project:
+To replicate the analysis, clone this GitHub repository, install the [dependencies](#dependencies) listed below, and run the following command at the command line/terminal from the root directory of this project:
 
-  - download data
+```
+make all
+```
+
+To reset the repo to a clean state, with no intermediate or results files, run the following command at the command line/terminal from the root directory of this project:
+
+```
+make clean
+```
   
-  `python scripts/data_download.py –url=https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip --destination=data/`
-  
-  - clean the data
-  
-  `python scripts/data_cleaning.py --file_path=data/ --clean_path=data/`
-  
-  - run the eda script
-  
-  `python scripts/eda_script.py --file_path=data/ --results_path=results/`
-  
-  - run the statistical analysis script
-  
-  `Rscript scripts/statistical_analysis_results.r –test=data/student-combined_clean.csv --out_dir=results/figures`
-  
-  - render the final report
-  
-  `Rscript -e "rmarkdown::render('doc/final_report.Rmd')"`
-  
-  
+## Dependencies 
+
+Python 3.7.3 and Python packages:
+
+  - docopt==0.6.2
+  - requests==2.22.0
+  - pytest==5.0.1
+  - pandas==0.24.2
+  - numpy==1.16.4
+  - altair==4.0.1
+
+R version 3.6.1 and R packages:
+
+  - tidyverse==1.3.0
+  - infer==0.5.1
+  - ggthemes==4.2.0
+  - docopt==0.6.1
+  - gridExtra==2.3
+  - cowplot==1.0.0
+  - tools==3.6.1
+  - testthat==2.3.1
+  - knitr==1.26
+  - kableExtra==1.1.0
