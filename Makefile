@@ -12,11 +12,11 @@ results/figures/result_metrics_summary.rds results/figures/distribution_mean_ci_
 doc/final_report.md: doc/final_report.Rmd doc/references.bib results/math_table.csv results/por_table.csv results/figures/math_plot.png results/figures/por_plot.png
 	Rscript -e "rmarkdown::render('doc/final_report.Rmd', output_format = 'github_document')"
 
-# clean data
+# Written by A. Muhammad on 2020-02-01 to clean the raw data
 data/student-mat_clean.csv data/student-por_clean.csv: data/student-mat.csv data/student-por.csv
 	python scripts/data_cleaning.py --file_path=data/ --clean_path=data/
 
-# eda and plots
+# Written by A. Muhammad on 2020-02-01 to perform eda and output plots
 results/math_table.csv results/por_table.csv results/figures/math_plot.png results/figures/por_plot.png: data/student-mat_clean.csv data/student-por_clean.csv
 	python scripts/eda_script.py --file_path=data/ --results_path=results/
 
