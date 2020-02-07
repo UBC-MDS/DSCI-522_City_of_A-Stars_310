@@ -428,13 +428,13 @@ Math
 
 <td style="text-align:right;">
 
-31.627
+31.464
 
 </td>
 
 <td style="text-align:right;">
 
-34.308
+34.092
 
 </td>
 
@@ -458,7 +458,7 @@ no
 
 <td style="text-align:right;">
 
-0.042
+0.047
 
 </td>
 
@@ -474,13 +474,13 @@ Math
 
 <td style="text-align:right;">
 
-28.469
+28.461
 
 </td>
 
 <td style="text-align:right;">
 
-32.220
+32.266
 
 </td>
 
@@ -504,7 +504,7 @@ yes
 
 <td style="text-align:right;">
 
-0.042
+0.047
 
 </td>
 
@@ -526,7 +526,7 @@ Portuguese
 
 <td style="text-align:right;">
 
-36.290
+36.247
 
 </td>
 
@@ -566,13 +566,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-32.694
+32.774
 
 </td>
 
 <td style="text-align:right;">
 
-34.971
+34.962
 
 </td>
 
