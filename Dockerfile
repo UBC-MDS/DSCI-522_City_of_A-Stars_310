@@ -1,6 +1,12 @@
+# Get rocker/tidyverse as base image
 FROM rocker/tidyverse
+
+# update linux packages
 RUN apt-get update
+
+# install base R and base R development tools
 RUN apt-get install r-base r-base-dev -y
+
 # Install other R packages
 RUN Rscript -e "install.packages('kableExtra')"
 RUN Rscript -e "install.packages('infer')"
@@ -13,6 +19,7 @@ RUN Rscript -e "install.packages('testthat')"
 RUN Rscript -e "install.packages('knitr')"
 RUN Rscript -e "install.packages('rmarkdown')"
 
+# Install anaconda base version
 RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -O ~/anaconda.sh && \
     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
     rm ~/anaconda.sh && \
@@ -24,13 +31,16 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_6
     /opt/conda/bin/conda clean -afy && \
     /opt/conda/bin/conda update -n base -c defaults conda
 
+# Set anconda path
 ENV PATH="/opt/conda/bin:${PATH}"
 
+# install other python packages
 RUN conda install -c anaconda docopt -y
 RUN conda install -c anaconda requests -y
 RUN conda install -c conda-forge pytest -y
 RUN conda install -c conda-forge altair vega_datasets -y
 
+# Install dependencies for altair plots
 RUN apt-get update && apt install -y chromium && apt-get install -y libnss3 && apt-get install unzip
 
 RUN wget -q "https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip" -O /tmp/chromedriver.zip \
@@ -39,4 +49,5 @@ RUN wget -q "https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriv
 
 RUN conda install selenium -y
 
+# suppress R from hostin on URL and run on terminal
 CMD ["/bin/bash"]
