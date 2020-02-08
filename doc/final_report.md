@@ -44,9 +44,32 @@ regardless of whether they are in a relationship or not, but for
 Portugese, the distribution seems to be slightly negatively
 skewed.
 
-<img src="../results/figures/math_plot.png" title="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
 
-<img src="../results/figures/por_plot.png" title="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
+<img src="../results/figures/math_plot.png" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" />
+
+<p class="caption">
+
+Figure 1. Maths grade distribution for students involved in a
+relationship and those who are
+not
+
+</p>
+
+</div>
+
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/por_plot.png" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" />
+
+<p class="caption">
+
+Figure 2. Portugese grade distribution for students involved in a
+relationship and those who are not
+
+</p>
+
+</div>
 
 Further, we looked at descriptive statistics, including mean, standard
 deviation and counts among the levels of the binary variable for whether
@@ -306,7 +329,18 @@ for comparison between grades of students in a relationship and those
 who are
 not.
 
-<img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/distribution_mean_ci_comparison.png" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" />
+
+<p class="caption">
+
+Figure 3. Grade distribution overlayed with confidence intervals for
+mean total grade based on relationship status
+
+</p>
+
+</div>
 
 For both Maths and Portugese, we observe that there is only a slight
 overlap between the confidence intervals for both groups (in
@@ -321,7 +355,18 @@ The simulation based null distribution along with the CIs and test
 statistic for both the subjects were visualized as
 follows:
 
-<img src="../results/figures/permutation_test_comparison.png" title="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+
+<img src="../results/figures/permutation_test_comparison.png" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" />
+
+<p class="caption">
+
+Figure 4. Null distribution of grades overlayed with confidence
+intervals for mean total grade based and test statistics
+
+</p>
+
+</div>
 
 In both the cases, we observed that the test statistic lies beyond the
 confidence interval range. For Maths’ student grades, this value is very
@@ -391,13 +436,13 @@ Math
 
 <td style="text-align:right;">
 
-31.410
+31.441
 
 </td>
 
 <td style="text-align:right;">
 
-34.069
+34.172
 
 </td>
 
@@ -421,7 +466,7 @@ no
 
 <td style="text-align:right;">
 
-0.041
+0.042
 
 </td>
 
@@ -437,13 +482,13 @@ Math
 
 <td style="text-align:right;">
 
-28.628
+28.659
 
 </td>
 
 <td style="text-align:right;">
 
-32.417
+32.228
 
 </td>
 
@@ -467,7 +512,7 @@ yes
 
 <td style="text-align:right;">
 
-0.041
+0.042
 
 </td>
 
@@ -483,13 +528,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-34.685
+34.702
 
 </td>
 
 <td style="text-align:right;">
 
-36.293
+36.303
 
 </td>
 
@@ -513,7 +558,7 @@ no
 
 <td style="text-align:right;">
 
-0.019
+0.018
 
 </td>
 
@@ -529,13 +574,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-32.736
+32.694
 
 </td>
 
 <td style="text-align:right;">
 
-34.946
+34.938
 
 </td>
 
@@ -559,7 +604,7 @@ yes
 
 <td style="text-align:right;">
 
-0.019
+0.018
 
 </td>
 
