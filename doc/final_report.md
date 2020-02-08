@@ -37,43 +37,20 @@ pertaining to school activities, social behaviour and family background.
 
 Our first step in exploring the data was looking at the distributions of
 grades of students for both the subjects to help us track cases of
-extreme outliers or extreme skenwness. Following are the histograms for
+extreme outliers or extreme skewness. Following are the histograms for
 grades for both the subjects across the students’ relationship status.
 Math grades of students seem to be fairly normally distributed
 regardless of whether they are in a relationship or not, but for
 Portugese, the distribution seems to be slightly negatively
 skewed.
 
-<div class="figure" style="text-align: center">
+<img src="../results/figures/math_plot.png" title="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
 
-<img src="../results/figures/math_plot.png" alt="Figure 1. Maths grade distribution for students involved in a relationship and those who are not" width="60%" />
+<img src="../results/figures/por_plot.png" title="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" style="display: block; margin: auto;" />
 
-<p class="caption">
-
-Figure 1. Maths grade distribution for students involved in a
-relationship and those who are
-not
-
-</p>
-
-</div>
-
-<div class="figure" style="text-align: center">
-
-<img src="../results/figures/por_plot.png" alt="Figure 2. Portugese grade distribution for students involved in a relationship and those who are not" width="60%" />
-
-<p class="caption">
-
-Figure 2. Portugese grade distribution for students involved in a
-relationship and those who are not
-
-</p>
-
-</div>
-
-Further, we looked at descriptive statistics, including mean, variance
-and counts among the levels of the binary variable for whether a student
-is involved in a romantic
+Further, we looked at descriptive statistics, including mean, standard
+deviation and counts among the levels of the binary variable for whether
+a student is involved in a romantic
 relationship.
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -281,8 +258,8 @@ yes
 
 </table>
 
-There does not seem to be much difference between the variance of
-students who are in a relationship and those who are not for both the
+There does not seem to be much difference between the standard deviation
+of students who are in a relationship and those who are not for both the
 subjects. But, we did notice a case of class imbalance with the
 proportion of students involved in a relationship being nearly a third
 of the total sample of students for both the subjects.
@@ -297,7 +274,7 @@ use of 4 columns from each data set (Maths and Portugese), a binary
 variable for whether a student is in a romantic relationship and 3
 columns for grades throughout the year (on a scale of 0-20). The grades
 received throughout the year were added and have been used as ‘total
-grades’ (on a sclae of 0-60) for the analysis. The null
+grades’ (on a scale of 0-60) for the analysis. The null
 (![H\_0](https://latex.codecogs.com/png.latex?H_0 "H_0")) and alternate
 hypothesis (![H\_1](https://latex.codecogs.com/png.latex?H_1 "H_1")) set
 up for both the subjects were as follows
@@ -329,25 +306,13 @@ for comparison between grades of students in a relationship and those
 who are
 not.
 
-<div class="figure" style="text-align: center">
+<img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" style="display: block; margin: auto;" />
 
-<img src="../results/figures/distribution_mean_ci_comparison.png" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" />
-
-<p class="caption">
-
-Figure 3. Grade distribution overlayed with confidence intervals for
-mean total grade based on relationship status
-
-</p>
-
-</div>
-
-We notice that there is not much overlap between the CIs for both the
-cases. This implies that there are only a few points from the range of
-plausible values in which the true value of average total grade of
-students lies with a 95% probability, and hence, it may happen that
-there may not be significant difference between the average total grades
-of students in a relationship and those who are not.
+For both Maths and Portugese, we observe that there is only a slight
+overlap between the confidence intervals for both groups (in
+relationship and not in relationship). This indicates that there may not
+be a significant difference between the average total grades of students
+in a relationship and those who are not (Kalinowski, n.d.).
 
 The test statistic for Maths’ students was 2.412 and for Portugese’s
 students was 1.628.
@@ -356,18 +321,7 @@ The simulation based null distribution along with the CIs and test
 statistic for both the subjects were visualized as
 follows:
 
-<div class="figure" style="text-align: center">
-
-<img src="../results/figures/permutation_test_comparison.png" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" />
-
-<p class="caption">
-
-Figure 4. Null distribution of grades overlayed with confidence
-intervals for mean total grade based and test statistics
-
-</p>
-
-</div>
+<img src="../results/figures/permutation_test_comparison.png" title="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" alt="Figure 4. Null distribution of grades overlayed with confidence intervals for mean total grade based and test statistics" width="80%" style="display: block; margin: auto;" />
 
 In both the cases, we observed that the test statistic lies beyond the
 confidence interval range. For Maths’ student grades, this value is very
@@ -673,6 +627,14 @@ Language*. <https://CRAN.R-project.org/package=docopt>.
 Dua, Dheeru, and Casey Graff. 2017. “UCI Machine Learning Repository.”
 University of California, Irvine, School of Information; Computer
 Sciences. <http://archive.ics.uci.edu/ml>.
+
+</div>
+
+<div id="ref-CI">
+
+Kalinowski, Pav. n.d. “Understanding Confidence Intervals (Cis) and
+Effect Size Estimation.”
+<https://www.psychologicalscience.org/observer/understanding-confidence-intervals-cis-and-effect-size-estimation>.
 
 </div>
 
