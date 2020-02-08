@@ -52,7 +52,7 @@ Option 2: **Without using Docker**
 
 Following is a map of how each file in project directory is connected:
 
-<img src='Makefile.png'>
+<img src='Makefile.png' height=190, width=900>
 
 ## Dependencies 
 
