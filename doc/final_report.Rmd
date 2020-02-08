@@ -84,7 +84,7 @@ We set our level of significance at 5% and first computed the 95% Confidence Int
 knitr::include_graphics("../results/figures/distribution_mean_ci_comparison.png")
 ```
 
-For both Maths and Portugese, we observe that there is a slight overlap between the confidence intervals for both groups (in relationship and not in relationship). This indicates that there may not be a significant difference between the average total grades of students in a relationship and those who are not [@CI].
+For both Maths and Portugese, we observe that there is only a slight overlap between the confidence intervals for both groups (in relationship and not in relationship). This indicates that there may not be a significant difference between the average total grades of students in a relationship and those who are not [@CI].
 
 The test statistic for Maths' students was 2.412 and for Portugese's students was 1.628.
 

@@ -308,11 +308,11 @@ not.
 
 <img src="../results/figures/distribution_mean_ci_comparison.png" title="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" alt="Figure 3. Grade distribution overlayed with confidence intervals for mean total grade based on relationship status" width="80%" style="display: block; margin: auto;" />
 
-For both Maths and Portugese, we observe that there is a slight overlap
-between the confidence intervals for both groups (in relationship and
-not in relationship). This indicates that there may not be a significant
-difference between the average total grades of students in a
-relationship and those who are not (Kalinowski, n.d.).
+For both Maths and Portugese, we observe that there is only a slight
+overlap between the confidence intervals for both groups (in
+relationship and not in relationship). This indicates that there may not
+be a significant difference between the average total grades of students
+in a relationship and those who are not (Kalinowski, n.d.).
 
 The test statistic for Maths’ students was 2.412 and for Portugese’s
 students was 1.628.
