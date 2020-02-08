@@ -297,12 +297,21 @@ use of 4 columns from each data set (Maths and Portugese), a binary
 variable for whether a student is in a romantic relationship and 3
 columns for grades throughout the year (on a scale of 0-20). The grades
 received throughout the year were added and have been used as ‘total
-grades’ (on a sclae of 0-60) for the analysis. The null (\(H_0\)) and
-alternate hypothesis (\(H_1\)) set up for both the subjects were as
-follows
+grades’ (on a sclae of 0-60) for the analysis. The null
+(![H\_0](https://latex.codecogs.com/png.latex?H_0 "H_0")) and alternate
+hypothesis (![H\_1](https://latex.codecogs.com/png.latex?H_1 "H_1")) set
+up for both the subjects were as follows
 
-\[H_0: \text{Average total grade of students who are in a relationship is same as for students who are not in a relationship}\]
-\[H_1: \text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}\]
+  
+![H\_0: \\text{Average total grade of students who are in a relationship
+is same as for students who are not in a
+relationship}](https://latex.codecogs.com/png.latex?H_0%3A%20%5Ctext%7BAverage%20total%20grade%20of%20students%20who%20are%20in%20a%20relationship%20is%20same%20as%20for%20students%20who%20are%20not%20in%20a%20relationship%7D
+"H_0: \\text{Average total grade of students who are in a relationship is same as for students who are not in a relationship}")  
+  
+![H\_1: \\text{Average total grade of students who are in a relationship
+is not the same as for students who are not in a
+relationship}](https://latex.codecogs.com/png.latex?H_1%3A%20%5Ctext%7BAverage%20total%20grade%20of%20students%20who%20are%20in%20a%20relationship%20is%20not%20the%20same%20as%20for%20students%20who%20are%20not%20in%20a%20relationship%7D
+"H_1: \\text{Average total grade of students who are in a relationship is not the same as for students who are not in a relationship}")  
 
 Both R (R Core Team 2019a) and Python (Van Rossum and Drake 2009)
 programming languages were used along with packages including docopt (de
@@ -428,13 +437,13 @@ Math
 
 <td style="text-align:right;">
 
-31.464
+31.410
 
 </td>
 
 <td style="text-align:right;">
 
-34.092
+34.069
 
 </td>
 
@@ -458,7 +467,7 @@ no
 
 <td style="text-align:right;">
 
-0.047
+0.041
 
 </td>
 
@@ -474,13 +483,13 @@ Math
 
 <td style="text-align:right;">
 
-28.461
+28.628
 
 </td>
 
 <td style="text-align:right;">
 
-32.266
+32.417
 
 </td>
 
@@ -504,7 +513,7 @@ yes
 
 <td style="text-align:right;">
 
-0.047
+0.041
 
 </td>
 
@@ -520,13 +529,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-34.690
+34.685
 
 </td>
 
 <td style="text-align:right;">
 
-36.247
+36.293
 
 </td>
 
@@ -566,13 +575,13 @@ Portuguese
 
 <td style="text-align:right;">
 
-32.774
+32.736
 
 </td>
 
 <td style="text-align:right;">
 
-34.962
+34.946
 
 </td>
 
