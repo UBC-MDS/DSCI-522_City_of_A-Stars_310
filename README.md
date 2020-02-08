@@ -26,39 +26,55 @@ The final report can be found [here](https://github.com/UBC-MDS/DSCI-522_City_of
 
 ## Usage
 
-To replicate the analysis, clone this GitHub repository, install the [dependencies](#dependencies) listed below, and run the following command at the command line/terminal from the root directory of this project:
+There are two ways in which this analysis can be replicated:
 
-```
-make all
-```
+Option 1: **Using Docker**
 
-To reset the repo to a clean state, with no intermediate or results files, run the following command at the command line/terminal from the root directory of this project:
+1. Install [Docker](https://www.docker.com/get-started)
+2. Clone this GitHub repository
+3. Navigate to the root directory of the project in terminal
+4. Run `docker run --rm -v /$(pwd):/usr/src/project manu2856/mds_workflows_g310 make -C /usr/src/project clean` at the terminal
+5. Run `docker run --rm -v /$(pwd):/usr/src/project manu2856/mds_workflows_g310 make -C /usr/src/project all` at the terminal
 
-```
-make clean
-```
-  
+*note: Windows users can run the following commands in Bash in place of steps (4) and (5) above*
+*`docker run --rm -v ${PWD}:/usr/src/project manu2856/mds_workflows_g310 bash -c "make -C /usr/src/project clean"`*
+*`docker run --rm -v ${PWD}:/usr/src/project manu2856/mds_workflows_g310 bash -c "make -C /usr/src/project all"`*
+
+Option 2: **Without using Docker**
+
+1. Clone this GitHub repository
+2. Install the [dependencies](#dependencies) listed below
+3. Navigate to the root directory of the project in terminal
+3. Run `make all` at the command line/terminal
+4. To reset the repo to a clean state, with no intermediate or results files, run the `make clean` at the command line/terminal
+
+## Makefile Dependency Diagram
+
+Following is a map of how each file in project directory is connected:
+
+<img src='Makefile.png' height = 300>
+
 ## Dependencies 
 
 Python 3.7.3 and Python packages:
 
-  - docopt==0.6.2
-  - requests==2.22.0
-  - pytest==5.0.1
-  - pandas==0.24.2
-  - numpy==1.16.4
-  - altair==4.0.1
+  - docopt>=0.6.2
+  - requests>=2.22.0
+  - pytest>=5.0.1
+  - pandas>=0.24.2
+  - numpy>=1.16.4
+  - altair>=4.0.1
 
 R version 3.6.1 and R packages:
 
-  - tidyverse==1.3.0
-  - infer==0.5.1
-  - ggthemes==4.2.0
-  - docopt==0.6.1
-  - gridExtra==2.3
-  - cowplot==1.0.0
-  - tools==3.6.1
-  - testthat==2.3.1
-  - knitr==1.26
-  - kableExtra==1.1.0
-  - rmarkdown==2.1
+  - tidyverse>=1.3.0
+  - infer>=0.5.1
+  - ggthemes>=4.2.0
+  - docopt>=0.6.1
+  - gridExtra>=2.3
+  - cowplot>=1.0.0
+  - tools>=3.6.1
+  - testthat>=2.3.1
+  - knitr>=1.26
+  - kableExtra>=1.1.0
+  - rmarkdown>=2.1
